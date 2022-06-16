@@ -22,7 +22,7 @@ class Canvas: UIView {
         guard let last = touches.first?.location(in: nil) else { return }
         
         
-//        var last = touches.location(in: nil)
+
         
         guard var lastObject = lines.popLast() else { return }
         guard var endPoint = lastObject.points.popLast() else { return }
@@ -92,15 +92,7 @@ class Canvas: UIView {
     }
     
     private func drawLRect(first: CGPoint, end: CGPoint, path: inout UIBezierPath ) {
-        let firstGo = CGPoint(x: end.x, y: first.y)
-        let thirdGo = CGPoint(x: first.x, y: end.y)
-        
-        path.move(to: first)
-        path.addLine(to: firstGo)
-        path.addLine(to: end)
-        path.addLine(to: thirdGo)
-        path.addLine(to: first)
-        
+        path = UIBezierPath(rect: CGRect(x: first.x, y: first.y, width: end.x - first.x, height: end.y - first.y))
     }
     
     private func drawTriangle(first: CGPoint, end: CGPoint, path: inout UIBezierPath ) {
@@ -109,7 +101,7 @@ class Canvas: UIView {
         path.move(to: first)
         path.addLine(to: middlePoint)
         path.addLine(to: end)
-        path.addLine(to: first)
+        path.close()
 
     }
     
