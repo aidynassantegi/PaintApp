@@ -15,14 +15,13 @@ class Canvas: UIView {
     var isFilled: Bool = false
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let first = touches.first?.location(in: nil) else { return }
+        guard var first = touches.first?.location(in: nil) else { return }
+        first.y -= 80
         lines.append(Object(color: objectColor, points: [(first, CGPoint())], buttonType: shapeType, isFilled: isFilled))
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let last = touches.first?.location(in: nil) else { return }
-        
-        
-
+        guard var last = touches.first?.location(in: nil) else { return }
+        last.y -= 80
         
         guard var lastObject = lines.popLast() else { return }
         guard var endPoint = lastObject.points.popLast() else { return }
