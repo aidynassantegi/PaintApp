@@ -70,7 +70,13 @@ class ViewController: UIViewController {
             canvas.isFilled = false
         }
     }
+    @IBAction func saveButton(_ sender: UIButton) {
+//        canvas.save()
+    }
     
+    @IBAction func loadButton(_ sender: UIButton) {
+//        canvas.reload()
+    }
     
 
 }

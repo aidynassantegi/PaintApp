@@ -12,7 +12,10 @@ struct ShapeViewModel {
     var points: [(fromPoint: CGPoint, toPoint: CGPoint)]
     let shapeType: ShapeType
     let isFilled: Bool
+    
 }
+
+
 
 
 

@@ -14,6 +14,7 @@
 		5941D6A52851BD8800957E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5941D6A32851BD8800957E1E /* Main.storyboard */; };
 		5941D6A72851BD8800957E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5941D6A62851BD8800957E1E /* Assets.xcassets */; };
 		5941D6AA2851BD8800957E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5941D6A82851BD8800957E1E /* LaunchScreen.storyboard */; };
+		5997D79C286F2211008BF2D5 /* ShapesMomento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997D79B286F2211008BF2D5 /* ShapesMomento.swift */; };
 		59D19785286C553E0001154D /* ShapeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D19784286C553E0001154D /* ShapeConfiguration.swift */; };
 		59D19787286C55C30001154D /* UIBiezer + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D19786286C55C30001154D /* UIBiezer + Extension.swift */; };
 		59D19789286C56020001154D /* LineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D19788286C56020001154D /* LineFactory.swift */; };
@@ -33,6 +34,7 @@
 		5941D6A62851BD8800957E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5941D6A92851BD8800957E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5941D6AB2851BD8800957E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5997D79B286F2211008BF2D5 /* ShapesMomento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesMomento.swift; sourceTree = "<group>"; };
 		59D19784286C553E0001154D /* ShapeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeConfiguration.swift; sourceTree = "<group>"; };
 		59D19786286C55C30001154D /* UIBiezer + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBiezer + Extension.swift"; sourceTree = "<group>"; };
 		59D19788286C56020001154D /* LineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineFactory.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				5941D69F2851BD8800957E1E /* SceneDelegate.swift */,
 				5941D6A12851BD8800957E1E /* ViewController.swift */,
 				591FDD6128570F460014B1BB /* Canvas.swift */,
+				5997D79B286F2211008BF2D5 /* ShapesMomento.swift */,
 				59E1DC9928587B7300F97ACE /* ShapeViewModel.swift */,
 				59D19783286C55100001154D /* ShapeFactory */,
 				5941D6A32851BD8800957E1E /* Main.storyboard */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D19785286C553E0001154D /* ShapeConfiguration.swift in Sources */,
+				5997D79C286F2211008BF2D5 /* ShapesMomento.swift in Sources */,
 				59D19787286C55C30001154D /* UIBiezer + Extension.swift in Sources */,
 				5941D6A22851BD8800957E1E /* ViewController.swift in Sources */,
 				59D1978F286C564B0001154D /* CircleFactory.swift in Sources */,
